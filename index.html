@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="animated-bg"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact" class="contact-btn">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="about">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Sharvari Patil</span></h1>
+        <p>
+            I am currently pursuing a Bachelor’s degree 
+            in Electrical and Computer Engineering, 
+            with a strong interest in software development. 
+            Along with my core engineering studies, 
+            I enjoy working with programming languages such as 
+            C, C++, Java, and Python, and building web applications using HTML, CSS, JavaScript, and React. 
+            I am continuously learning and improving my skills through projects and practical implementation.
+        </p>
+    </div>
+    <div class="hero-design">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+</div>
+
+</section>
+
+<!-- ===== PROJECT SECTION ===== -->
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Book Store Management System</h3>
+            <p>Developed a complete web-based CRUD application for managing book records. </p>
+            <p>Built using React.js for the frontend and Node.js/Express with MongoDB Atlas for backend operations. </p>
+            <button>View</button>
+        </div>
+
+        <div class="project-card">
+            <h3>Floppy Fish Game (Java Swing — Personal Project)</h3>
+            <p>Created a 2D arcade-style game inspired by Flappy Bird using Java Swing. </p>
+            <p> Implemented core game mechanics including gravity, collision detection, obstacle movement, 
+              animations, and scoring system.</p>
+            <button>View</button>
+        </div>
+
+        <div class="project-card">
+            <h3>Home Automation</h3>
+            <p>IoT-based home automation system using ESP8266 that enables remote control of electrical appliances through a mobile application. 
+                The system allows real-time monitoring and switching of devices over Wi-Fi, improving convenience, energy efficiency, 
+                and smart control for residential environments.</p>
+            <button>View</button>
+        </div>
+    </div>
+</section>
+<!-- ===== SKILLS SECTION ===== -->
+<!-- ===== SKILLS SECTION ===== -->
+<section class="skills " id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
+            <p>C</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+            <p>C++</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+            <p>Java</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+            <p>Python</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+            <p>HTML</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+            <p>CSS</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+            <p>JavaScript</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg">
+            <p>React JS</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ===== RESUME SECTION ===== -->
+<section class="resume" id="resume">
+    <h2>Resume</h2>
+    <p>Click below to download my resume.</p>
+
+    <a href="Sharvari_Resume1.pdf" target="_blank">
+        <download>
+        <button class="btn primary-btn">Download Resume</button>
+    </a>
+</section>
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-subtext">
+        Feel free to reach out for opportunities or collaborations.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> sharvaripatil333@gmail.com</p>
+
+             <div class="social-links">
+                <a href="https://www.linkedin.com/in/sharvari-patil-4249662b1/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Sharvaripatil25" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+
+    </div>
+</section>
+<div id="toast" class="toast">Message Sent Successfully!</div>
+<script src="script.js"></script>
+<div id="toast" class="toast">Message Sent Successfully!</div>
+
+</body>
+</html>
