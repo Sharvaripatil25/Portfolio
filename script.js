@@ -64,4 +64,22 @@ form.addEventListener("submit", function(e) {
     // Optional: reset form
     form.reset();
 });
+const toggleBtn = document.getElementById("mode-toggle");
 
+// Load saved mode
+if(localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "Light Mode";
+}
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")) {
+        toggleBtn.textContent = "Light Mode";
+        localStorage.setItem("theme", "dark");
+    } else {
+        toggleBtn.textContent = "Dark Mode";
+        localStorage.setItem("theme", "light");
+    }
+});
