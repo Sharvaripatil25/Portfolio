@@ -738,10 +738,7 @@ body.dark .gradient-bg {
 body.dark .corner-accent {
     opacity: 0.4;
 }
-.hero-content {
-    max-width: 700px;
-    margin-left: 60px;   /* shifts content right */
-}
+
 /* ===== Contact Form Dark Mode Fix ===== */
 
 .contact-form input,
