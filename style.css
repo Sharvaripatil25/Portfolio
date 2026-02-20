@@ -777,3 +777,7 @@ body.dark .contact-form textarea::placeholder {
 body.dark {
     --text-color: #f1f5f9;
 }
+.hero-content {
+    max-width: 600px;
+    margin-left: 120px;   /* shifted right for desktop */
+}
