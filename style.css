@@ -777,7 +777,16 @@ body.dark .contact-form textarea::placeholder {
 body.dark {
     --text-color: #f1f5f9;
 }
-.hero-content {
-    max-width: 600px;
-    margin-left: 120px;   /* shifted right for desktop */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    padding: 0 8%;   /* left & right spacing */
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 5%;
+        justify-content: center;
+        text-align: center;
+    }
 }
