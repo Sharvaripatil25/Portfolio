@@ -589,6 +589,9 @@ body.dark .hero {
   background: linear-gradient(135deg, var(--primary-color), #9333ea);
   color: rgb(255, 249, 249);
 }
+body.dark .hero h1 {
+    color: rgb(254, 254, 254);
+}
 body.dark .hero h1 span {
     color: #6c63ff
 }
